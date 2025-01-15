@@ -11,7 +11,7 @@ Writeup for TryHackMe SigHunt Lab - Sigma rules repository for advanced threat d
    - Parent process (`chrome.exe`) initiating `mshta.exe`.
    - A command-line execution pointing to an HTA file.
 
-2. I crafted a Sigma rule targeting process creation (`EventID: 1`) to detect this behavior:
+2. I created a Sigma rule targeting process creation (`EventID: 1`) to detect this behavior:
    ```yaml
    detection:
      selection:
